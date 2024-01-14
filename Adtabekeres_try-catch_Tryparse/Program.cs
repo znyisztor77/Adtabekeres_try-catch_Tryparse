@@ -11,8 +11,10 @@ namespace Adtabekeres_try_catch_Tryparse
         static void Main(string[] args)
         {
             Console.WriteLine("Adatbekérés két módon");
+            Console.WriteLine("Try.parse");
             int szam1 = adatBeker("Kérek egy számot:");
             Console.WriteLine($"A kapott szám: {szam1}");
+            Console.WriteLine("try_catch");
             int szam2 = adatBeker_New("Kérek egy számot:");
             Console.WriteLine($"A kapott szám: {szam2}");
 
@@ -34,6 +36,7 @@ namespace Adtabekeres_try_catch_Tryparse
                 {
 
                     Console.WriteLine("Hibás adat bevitel!");
+                    
                 }
             }
             return szam;
